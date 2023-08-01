@@ -9,4 +9,5 @@ services:
       - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
     volumes:
       - .:/microfrontend-sub-app-react-example
-    command: sh -c "tail -F anything"
+    #command: sh -c "tail -F anything"
+    command: sh -c "npm install && npm start"
